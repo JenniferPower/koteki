@@ -1,0 +1,45 @@
+html {
+  margin: 0;
+}
+
+body {
+  padding: 20px 20px 20px 40px;
+  margin: 0;
+  background: url(back.jpg);
+  background-repeat: repeat;
+}
+
+header {
+  color: #3b398e;
+  font-size: 2.5ex;
+  font-family: Forum, AriaBlack, sans-serif;
+  font-weight: bold;
+}
+
+article {
+  background-color: rgba(255, 247, 237, 0.5);
+  font-family: Forum, AriaBlack, sans-serif;
+  font-size: 2.5ex;
+  color: #3b398e;
+  padding: inherit;
+  max-width: 60%;
+  box-shadow: 15px 10px 30px -10px rgb(113, 104, 142);
+
+}
+
+img {
+  max-width: 400px;
+  max-height: 500px;
+  padding-left: 30px;
+}
+
+p {
+  max-width: 800px;
+}
+
+header ul li {
+  display: block;
+  float:left;
+  margin-right: 10px;
+  list-style: none;
+}
