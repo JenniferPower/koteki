@@ -1,25 +1,32 @@
+@font-face {
+  font-family: 'Source_Serif';
+  src:url(fonts/sourceserifpro-regular-webfont.eot);
+  src: url(fonts/sourceserifpro-regular-webfont.woff2) format('woff2'),
+  url(fonts/sourceserifpro-regular-webfont.woff) format('woff'),
+  url(fonts/sourceserifpro-regular-webfont.ttf) format('truetype'),
+  url(fonts/sourceserifpro-regular-webfont.svg) format('svg');
+}
+
 html {
   margin: 0;
 }
 
-body {
+body:not(footer) {
+  font-family: 'Source_Serif';
+  font-size: 1.2em;
   padding: 20px 20px 20px 40px;
   margin: 0;
-  background: url(back.jpg);
+  background: url(images/back.jpg);
   background-repeat: repeat;
 }
 
 header {
+  font-size: 1.5em;
   color: #3b398e;
-  font-size: 2.5ex;
-  font-family: Forum, AriaBlack, sans-serif;
-  font-weight: bold;
 }
 
 article {
   background-color: rgba(255, 247, 237, 0.5);
-  font-family: Forum, AriaBlack, sans-serif;
-  font-size: 2.5ex;
   color: #3b398e;
   padding: inherit;
   max-width: 60%;
@@ -27,19 +34,56 @@ article {
 
 }
 
-img {
+img[src^="images/1"] {
   max-width: 400px;
   max-height: 500px;
   padding-left: 30px;
 }
 
-p {
+p:not(footer p) {
   max-width: 800px;
 }
 
-header ul li {
+header ul {
+  padding: 20px 0px 60px;
+  color: rgb(255, 247, 237);
+  background-color: #3b398e;
+  text-align: center;
+
+}
+
+li {
+  list-style: none;
+}
+
+header li {
+  padding: 0px 20px;
   display: block;
   float:left;
-  margin-right: 10px;
-  list-style: none;
+}
+
+a:link {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+header a:hover,header li:hover {
+  background-color: #8b96ef;
+
+}
+
+footer {
+  margin-top: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  word-spacing: 2em;
+  text-align: center;
+  background-color: #3b398e;
+  color: rgb(255, 247, 237);
+  font-size: 0.9em;
 }
