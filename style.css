@@ -20,9 +20,31 @@ body:not(footer) {
   background-repeat: repeat;
 }
 
+
+header, footer, article {
+  font-weight: normal;
+}
+
 header {
   font-size: 1.5em;
   color: #3b398e;
+}
+
+header ul {
+  padding: 20px 0px 60px;
+  color: rgb(255, 247, 237);
+  background-color: #3b398e;
+  text-align: center;
+}
+
+header li {
+  padding: 0px 20px;
+  display: block;
+  float:left;
+}
+
+header a:hover,header li:hover {
+  background-color: #8b96ef;
 }
 
 article {
@@ -31,7 +53,6 @@ article {
   padding: inherit;
   max-width: 60%;
   box-shadow: 15px 10px 30px -10px rgb(113, 104, 142);
-
 }
 
 img[src^="images/1"] {
@@ -44,37 +65,13 @@ p:not(footer p) {
   max-width: 800px;
 }
 
-header ul {
-  padding: 20px 0px 60px;
-  color: rgb(255, 247, 237);
-  background-color: #3b398e;
-  text-align: center;
-
-}
-
 li {
   list-style: none;
 }
 
-header li {
-  padding: 0px 20px;
-  display: block;
-  float:left;
-}
-
-a:link {
+a:link, a:visited {
   color: inherit;
   text-decoration: none;
-}
-
-a:visited {
-  color: inherit;
-  text-decoration: none;
-}
-
-header a:hover,header li:hover {
-  background-color: #8b96ef;
-
 }
 
 footer {
