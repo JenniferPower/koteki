@@ -1,18 +1,11 @@
-@font-face {
-  font-family: 'Source_Serif';
-  src:url(fonts/sourceserifpro-regular-webfont.eot);
-  src: url(fonts/sourceserifpro-regular-webfont.woff2) format('woff2'),
-  url(fonts/sourceserifpro-regular-webfont.woff) format('woff'),
-  url(fonts/sourceserifpro-regular-webfont.ttf) format('truetype'),
-  url(fonts/sourceserifpro-regular-webfont.svg) format('svg');
-}
+@import url('https://fonts.googleapis.com/css?family=Arapey|Montserrat:300');
 
 html {
   margin: 0;
 }
 
 body:not(footer) {
-  font-family: 'Source_Serif';
+  font-family: 'Arapey', serif;;
   font-size: 1.2em;
   padding: 20px 20px 20px 40px;
   margin: 0;
@@ -20,27 +13,29 @@ body:not(footer) {
   background-repeat: repeat;
 }
 
+h1, h2, h3, header li, footer li {
+  font-family: 'Montserrat', sans-serif;
+}
 
 header, footer, article {
   font-weight: normal;
 }
 
 header {
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: #3b398e;
 }
 
 header ul {
-  padding: 20px 0px 60px;
+  padding: 10px 0px;
+  padding-left: 0;
   color: rgb(255, 247, 237);
   background-color: #3b398e;
-  text-align: center;
 }
 
 header li {
-  padding: 0px 20px;
-  display: block;
-  float:left;
+  padding: 10px 20px;
+  display: inline;
 }
 
 header a:hover,header li:hover {
@@ -61,7 +56,7 @@ img[src^="images/1"] {
   padding-left: 30px;
 }
 
-p:not(footer p) {
+p {
   max-width: 800px;
 }
 
@@ -74,13 +69,17 @@ a:link, a:visited {
   text-decoration: none;
 }
 
-footer {
+footer ul{
+  text-align: center;
   margin-top: 15px;
   padding-top: 15px;
   padding-bottom: 15px;
-  word-spacing: 2em;
-  text-align: center;
   background-color: #3b398e;
   color: rgb(255, 247, 237);
   font-size: 0.9em;
+}
+
+footer li {
+  padding: 0px 20px;
+  display: inline;
 }
